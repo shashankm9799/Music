@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,13 +55,45 @@
             border-radius: 5px;
             display: inline-block;
         }
-
         .button:hover {
+            background-color: #e67e22; /* Darker orange on hover */
+        }
+        /* Styling for the navigation */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            background-color: #333; /* Dark background for nav */
+            text-align: center;
+        }
+        nav ul li {
+            display: inline; /* Display nav items inline */
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white; /* White text for links */
+            padding: 10px 20px;
+        }
+        .active, .appointment-button {
+            background-color: #ff8c00; /* Orange background for active link and appointment button */
+            border-radius: 5px;
+        }
+        .active:hover, .appointment-button:hover {
             background-color: #e67e22; /* Darker orange on hover */
         }
     </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="course.html">Course</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="book.html" class="appointment-button">BOOK APPOINTMENT</a></li>
+        </ul>
+    </nav>
     <div class="hero-section">
         <h1>Welcome to Anupama Music Studio</h1>
         <p>Explore the rhythm and melodies with us</p>
@@ -86,6 +119,7 @@
             <h2>Contact Us</h2>
             <div class="contact">
                 <p>Email: info@anupamamusicstudio.com</p>
+
                 <p>Phone: +123 456 7890</p>
                 <p>Address: 123 Music Avenue, Melody City</p>
             </div>
