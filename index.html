@@ -1,129 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Company Landing Page</title>
+    <title>Anupama Music Studio</title>
     <style>
-        /* Add your CSS styles here */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f0f0; /* Light grey background */
         }
-
-        header {
-            background-color: #333;
-            color: #fff;
+        .hero-section {
+            background: orange; /* Orange background for the hero section */
+            color: black; /* Black text color for contrast */
+            padding: 100px 0;
+            text-align: center;
+        }
+        .content {
             padding: 20px;
-            text-align: center;
+            background-color: #f0f0f0; /* Light grey background for content */
         }
-
-        nav {
-            text-align: center;
-            padding: 10px 0;
+        .section {
+            margin-bottom: 40px;
         }
-
-        nav a {
-            text-decoration: none;
-            color: #333;
-            padding: 10px 20px;
-            margin: 0 5px;
+        .section h2 {
+            text-align: center;
+            color: #ff8c00; /* Darker shade of orange for headings */
+        }
+        .services-list {
+            list-style: none;
+            padding: 0;
+        }
+        .services-list li {
+            margin-bottom: 10px;
+            background-color: #fff; /* White background for services list */
+            padding: 10px;
+            border: 1px solid #d3d3d3; /* Light grey border for list items */
+            color: #333; /* Dark grey text for better readability */
+        }
+        .contact {
+            background-color: #fff; /* White background for contact section */
+            padding: 20px;
             border-radius: 5px;
-            background-color: #fff;
-            transition: background-color 0.3s ease;
+            color: #333; /* Dark grey text */
         }
-
-        nav a:hover {
-            background-color: #ddd;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-        }
-
-        h1 {
-            text-align: center;
-            margin-top: 50px;
-            color: #333;
-        }
-
-        p {
-            text-align: center;
-            margin-top: 20px;
-            color: #666;
-        }
-
-        .cta {
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        .cta a {
-            text-decoration: none;
-            color: #fff;
-            background-color: #f90;
+        /* Additional styling for buttons or links */
+        .button {
+            background-color: #ff8c00; /* Orange background for buttons */
+            color: #fff; /* White text */
             padding: 10px 20px;
+            text-decoration: none;
             border-radius: 5px;
-            transition: background-color 0.3s ease;
+            display: inline-block;
         }
 
-        .cta a:hover {
-            background-color: #c60;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        .button:hover {
+            background-color: #e67e22; /* Darker orange on hover */
         }
     </style>
 </head>
-
 <body>
-    <header>
-        <h1>Welcome to Our Music Company</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <div class="container">
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus
-                ante dapibus diam.</p>
-        </section>
-
-        <section id="services">
-            <h2>Our Services</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus
-                ante dapibus diam.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus
-                ante dapibus diam.</p>
-            <div class="cta">
-                <a href="#">Get in Touch</a>
-            </div>
-        </section>
+    <div class="hero-section">
+        <h1>Welcome to Anupama Music Studio</h1>
+        <p>Explore the rhythm and melodies with us</p>
     </div>
 
-    <footer>
-        <p>&copy; 2024 Music Company. All Rights Reserved.</p>
-    </footer>
-</body>
+    <div class="content">
+        <div class="section">
+            <h2>About Us</h2>
+            <p>Anupama Music Studio is your go-to place for exploring, learning, and creating music. Our studio is equipped with the latest instruments and recording equipment to help you unleash your musical talent.</p>
+        </div>
 
+        <div class="section">
+            <h2>Our Services</h2>
+            <ul class="services-list">
+                <li>Music Lessons for all ages</li>
+                <li>Recording Studio Rental</li>
+                <li>Music Production and Editing</li>
+                <li>Live Music Arrangements for Events</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Contact Us</h2>
+            <div class="contact">
+                <p>Email: info@anupamamusicstudio.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: 123 Music Avenue, Melody City</p>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
